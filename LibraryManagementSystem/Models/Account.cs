@@ -21,13 +21,14 @@ namespace LibraryManagementSystem.Models
 
         #region Constructors
 
-        public Account(string username, string password, string phoneNumber, string email)
+        public Account(string username, string password, string phoneNumber, string email , AccountRoleEnum role)
         {
             Id = ++Id;
             Username = username;
             Password = password;
             PhoneNumber = phoneNumber;
             Email = email;
+            Role = role;
         }
         #endregion
 

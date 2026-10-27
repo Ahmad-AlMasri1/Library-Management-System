@@ -23,7 +23,7 @@ namespace LibraryManagementSystem.Models
 
         #region Constructors
 
-        public Member(string username, string password, string phoneNumber, string email, int maximumLoanItems) : base(username, password, phoneNumber, email)
+        public Member(string username, string password, string phoneNumber, string email, int maximumLoanItems) : base(username, password, phoneNumber, email, AccountRoleEnum.Member)
         {
             MembershipId = Id;
             MaximumLoanItems = maximumLoanItems;
