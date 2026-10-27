@@ -7,7 +7,7 @@ namespace LibraryManagementSystem.Models
     internal class Member : Account
     {
         #region Attributes
-        public int MembershipId { get; set; }
+        public static int MembershipId { get; set; } = 0;
 
         public int MaximumLoanItems { get; set; }
 
@@ -25,7 +25,7 @@ namespace LibraryManagementSystem.Models
 
         public Member(string username, string password, string phoneNumber, string email, int maximumLoanItems) : base(username, password, phoneNumber, email, AccountRoleEnum.Member)
         {
-            MembershipId = Id;
+            MembershipId = ++MembershipId;
             MaximumLoanItems = maximumLoanItems;
             CurrentLoanItems = 0;
         }

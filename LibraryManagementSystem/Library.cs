@@ -42,7 +42,7 @@ namespace LibraryManagementSystem
                         break;
                     case 2:
                         Console.WriteLine("Register New Member selected.");
-                        // Implement registration functionality here
+                        Register();
                         break;
                     case 3:
                         Console.WriteLine("Browse Library selected.");
@@ -62,6 +62,23 @@ namespace LibraryManagementSystem
             } while(choice!=5);
             
 
+        }
+
+        private void Register()
+        {
+            string name, password, phoneNumber, email;
+            Console.WriteLine("Enter your name:");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter your password:");
+            password = Console.ReadLine();
+            Console.WriteLine("Enter your phone number:");
+            phoneNumber = Console.ReadLine();
+            Console.WriteLine("Enter your email:");
+            email = Console.ReadLine();
+
+            accounts.Add(new Member(name, password, phoneNumber, email, 5));
+
+            Console.WriteLine("Registration successful! You can now log in with your email and password.");
         }
 
         private void Login()
@@ -91,5 +108,7 @@ namespace LibraryManagementSystem
                 Console.WriteLine("Invalid email or password.");
             }
         }
+
+
     }
 }
