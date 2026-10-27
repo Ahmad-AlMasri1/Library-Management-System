@@ -10,7 +10,7 @@ namespace LibraryManagementSystem.Models
         public int IssueNumber { get; set; }
         #endregion
         #region Constructors
-        public Magazine(string title, ItemStatus Status, ItemType Type, int issueNumber) : base(title, Status, Type, Period: 7, FeePerDay: 25)
+        public Magazine(string title, ItemStatusEnum Status, ItemTypeEnum Type, int issueNumber) : base(title, Status, Type, Period: 7, FeePerDay: 25)
         {
             IssueNumber = issueNumber;
         }

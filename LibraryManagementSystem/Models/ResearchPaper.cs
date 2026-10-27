@@ -14,7 +14,7 @@ namespace LibraryManagementSystem.Models
         #endregion
         #region Constructors
 
-        public ResearchPaper(string title, ItemStatus status, ItemType type, string researcherName, string researchField) : base(title, status, type, Period: 30,FeePerDay: 10)
+        public ResearchPaper(string title, ItemStatusEnum status, ItemTypeEnum type, string researcherName, string researchField) : base(title, status, type, Period: 30,FeePerDay: 10)
         {
             ResearcherName = researcherName;
             ResearchField = researchField;

@@ -4,11 +4,10 @@ using System.Text;
 
 namespace LibraryManagementSystem.Enum
 {
-    internal enum ItemStatus
+    internal enum AccountRoleEnum
     {
-        Available,
-        CheckedOut,
-        Reserved
-
+        Admin,
+        Librarian,
+        Member
     }
 }

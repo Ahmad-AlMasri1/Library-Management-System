@@ -16,7 +16,7 @@ namespace LibraryManagementSystem.Models
         #endregion
         #region Constructors
 
-        public Book(string title, ItemStatus status, ItemType type, string author, int pageCount) : base(title, status, type, Period: 14, FeePerDay: 50)
+        public Book(string title, ItemStatusEnum status, ItemTypeEnum type, string author, int pageCount) : base(title, status, type, Period: 14, FeePerDay: 50)
         {
             Author = author;
             PageCount = pageCount;

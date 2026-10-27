@@ -10,8 +10,8 @@ namespace LibraryManagementSystem.Models
 
         public static int ItemID { get; set; } = 0;
         public string Title { get; set; }
-        public ItemStatus Status { get; set; }
-        public ItemType Type { get; set; }
+        public ItemStatusEnum Status { get; set; }
+        public ItemTypeEnum Type { get; set; }
 
         public int Period { get; set; }
 
@@ -19,7 +19,7 @@ namespace LibraryManagementSystem.Models
         #endregion
 
         #region Constructors
-        public LibraryItem(string title, ItemStatus Status, ItemType Type, int Period, int FeePerDay)
+        public LibraryItem(string title, ItemStatusEnum Status, ItemTypeEnum Type, int Period, int FeePerDay)
         {
             ItemID = ++ItemID;
             Title = title;

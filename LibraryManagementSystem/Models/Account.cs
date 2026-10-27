@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using LibraryManagementSystem.Enum;
 namespace LibraryManagementSystem.Models
 {
-    internal class Account
+    internal abstract class Account
     {
         #region Attributes
-            public int Id { get; set; }
+            public static int Id { get; set; } = 0;
             public string Username { get; set; }
             public string Password { get; set; }
             
@@ -15,28 +15,19 @@ namespace LibraryManagementSystem.Models
 
             public string Email { get; set; }
 
-            public DateOnly DOB { get; set; }
+            public  AccountRoleEnum Role { get; set; }
 
         #endregion
 
         #region Constructors
-        public Account()
+
+        public Account(string username, string password, string phoneNumber, string email)
         {
-            Id = 0;
-            Username = string.Empty;
-            Password = string.Empty;
-            PhoneNumber = string.Empty;
-            Email = string.Empty;
-            DOB = DateOnly.MinValue;
-        }
-        public Account(int id, string username, string password, string phoneNumber, string email, DateOnly dob)
-        {
-            Id = id;
+            Id = ++Id;
             Username = username;
             Password = password;
             PhoneNumber = phoneNumber;
             Email = email;
-            DOB = dob;
         }
         #endregion
 
@@ -44,6 +35,8 @@ namespace LibraryManagementSystem.Models
 
         public bool CheckPassword(string password) => Password == password;
         
+        public abstract void DisplayAccountInfo();
+
 
         #endregion
     }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LibraryManagementSystem.Enum
 {
-    internal enum ItemType
+    internal enum ItemTypeEnum
     {
         Book,
         ResearchPaper,
