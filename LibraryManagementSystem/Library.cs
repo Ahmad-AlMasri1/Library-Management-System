@@ -14,7 +14,7 @@ namespace LibraryManagementSystem
             accounts.Add(new Librarian("Ahmad", "1234", "1234567890", "ahmad@gmail.com", AccountRoleEnum.Librarian));
             items.Add(new Book("The Great Gatsby",ItemStatusEnum.Available,ItemTypeEnum.Book, "F. Scott Fitzgerald", 1925));
             items.Add(new Book("To Kill a Mockingbird",ItemStatusEnum.Available,ItemTypeEnum.Book, "Harper Lee", 1960));
-            items.Add(new ResearchPaper("Quantum Computing: An Overview", ItemStatusEnum.Available, ItemTypeEnum.ResearchPaper, "John Doe", "Computer Science"));
+            items.Add(new ResearchPaper("Quantum Computing: An Overview", ItemStatusEnum.CheckedOut, ItemTypeEnum.ResearchPaper, "John Doe", "Computer Science"));
             items.Add(new Magazine("National Geographic", ItemStatusEnum.Available, ItemTypeEnum.Magazine, 2));
 
         }
@@ -46,11 +46,11 @@ namespace LibraryManagementSystem
                         break;
                     case 3:
                         Console.WriteLine("Browse Library selected.");
-                        // Implement browsing functionality here
+                        Browse();
                         break;
                     case 4:
                         Console.WriteLine("Search for Items selected.");
-                        // Implement search functionality here
+                        SearchItem();
                         break;
                     case 5:
                         Console.WriteLine("Exiting the system. Goodbye!");
@@ -62,6 +62,63 @@ namespace LibraryManagementSystem
             } while(choice!=5);
             
 
+        }
+
+        private void SearchItem()
+        {
+            int choice;
+            do { 
+            Console.WriteLine("Search for Items by:");
+            Console.WriteLine("1. Title");
+            Console.WriteLine("2. Item ID");
+            Console.WriteLine("3. Back to Main Menu");
+            choice = int.Parse(Console.ReadLine());
+            switch (choice)
+            {
+                case 1:
+                    Console.WriteLine("Enter the title to search for:");
+                    string title = Console.ReadLine();
+                    if(items.Exists(i=>i.Title == title && i.Status != ItemStatusEnum.CheckedOut))
+                    {   
+                        LibraryItem foundItem = items.Find(i=>i.Title == title);
+                        foundItem.DisplayItemInfo();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Item not found.");
+                    }
+                    break;
+                case 2:
+                    Console.WriteLine("Enter the Item ID to search for:");
+                    int id = int.Parse(Console.ReadLine());
+                    if (items.Exists(i => i.Id == id && i.Status != ItemStatusEnum.CheckedOut))
+                    {
+                        LibraryItem foundItem = items.Find(i => i.Id == id );
+                        foundItem.DisplayItemInfo();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Item not found.");
+                    }
+                    break;
+                case 3:
+                        Console.WriteLine("Returning to Main Menu.");
+                        break;
+                default:
+                Console.WriteLine("Invalid choice. Please try again.");
+                break;
+
+            }}while(choice<1 || choice>3);
+        }
+
+        private void Browse()
+        {
+            Console.WriteLine("Library Items:");
+            foreach (var item in items)
+            {   
+                if (item.Status != ItemStatusEnum.CheckedOut)
+                    Console.WriteLine($"Title: {item.Title}, Status: {item.Status}, Type: {item.Type}");
+            }
         }
 
         private void Register()

@@ -23,7 +23,7 @@ namespace LibraryManagementSystem.Models
         #region Methods
         public override void DisplayItemInfo()
         {
-            Console.WriteLine($"Research Paper ID: {ItemID}");
+            Console.WriteLine($"Research Paper ID: {Id}");
             Console.WriteLine($"Researcher Name: {ResearcherName}");
             Console.WriteLine($"Research Field: {ResearchField}");
             Console.WriteLine($"Status: {Status}");

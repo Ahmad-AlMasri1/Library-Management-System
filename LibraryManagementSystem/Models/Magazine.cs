@@ -18,7 +18,7 @@ namespace LibraryManagementSystem.Models
         #region Methods
         public override void DisplayItemInfo()
         {
-            Console.WriteLine($"Magazine ID: {ItemID}");
+            Console.WriteLine($"Magazine ID: {Id}");
             Console.WriteLine($"Title: {Title}");
             Console.WriteLine($"Issue Number: {IssueNumber}");
             Console.WriteLine($"Status: {Status}");

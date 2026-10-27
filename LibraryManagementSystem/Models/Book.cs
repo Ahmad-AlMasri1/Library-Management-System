@@ -26,7 +26,7 @@ namespace LibraryManagementSystem.Models
         
         public override void DisplayItemInfo()
         {
-            Console.WriteLine($"Book ID: {ItemID}");
+            Console.WriteLine($"Book ID: {Id}");
             Console.WriteLine($"Title: {Title}");
             Console.WriteLine($"Author: {Author}");
             Console.WriteLine($"Page Count: {PageCount}");
