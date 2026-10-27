@@ -12,16 +12,21 @@ namespace LibraryManagementSystem.Models
         public string Title { get; set; }
         public ItemStatus Status { get; set; }
         public ItemType Type { get; set; }
+
+        public int Period { get; set; }
+
+        public int FeePerDay { get; set; }
         #endregion
 
         #region Constructors
-        public LibraryItem(string title, ItemStatus Status, ItemType Type)
+        public LibraryItem(string title, ItemStatus Status, ItemType Type, int Period, int FeePerDay)
         {
             ItemID = ++ItemID;
             Title = title;
             this.Status = Status;
             this.Type = Type;
-
+            this.Period = Period;
+            this.FeePerDay = FeePerDay;
         }
         #endregion
 
@@ -29,9 +34,9 @@ namespace LibraryManagementSystem.Models
 
         public abstract void DisplayItemInfo();
        
-        public abstract void LoanPeriod();
+        public abstract string LoanPeriod(int Period);
 
-        public abstract void FineCalculation();
+        public abstract string CalculateFee(int NumberOfDays);
 
         #endregion
 

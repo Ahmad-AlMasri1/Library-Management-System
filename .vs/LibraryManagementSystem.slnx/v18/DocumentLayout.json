@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\researchpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\researchpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\magazine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\magazine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\libraryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\libraryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\enum\\itemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\enum\\itemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,6 +33,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\enum\\itemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\enum\\itemtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +54,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "ResearchPaper.cs",
+              "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\ResearchPaper.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\ResearchPaper.cs",
+              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\ResearchPaper.cs*",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\ResearchPaper.cs*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T19:25:42.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Magazine.cs",
+              "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Magazine.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Magazine.cs",
+              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Magazine.cs*",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\Magazine.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T19:21:49.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ItemType.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Enum\\ItemType.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Enum\\ItemType.cs",
@@ -63,20 +97,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Book.cs",
               "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Book.cs*",
               "RelativeToolTip": "LibraryManagementSystem\\Models\\Book.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T19:08:56.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ItemStatus.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Enum\\ItemStatus.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Enum\\ItemStatus.cs",
@@ -89,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "LibraryManagementSystem",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\LibraryManagementSystem.csproj",
@@ -106,20 +140,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LibraryItem.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\LibraryItem.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\LibraryItem.cs",
-              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\LibraryItem.cs",
-              "RelativeToolTip": "LibraryManagementSystem\\Models\\LibraryItem.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAowB8AAAAqAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\LibraryItem.cs*",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\LibraryItem.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAcwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T18:38:21.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Member.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Member.cs",
@@ -132,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Account.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Account.cs",
@@ -145,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Library.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Library.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Library.cs",
@@ -164,7 +198,7 @@
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Program.cs",
               "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs*",
               "RelativeToolTip": "LibraryManagementSystem\\Program.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T16:31:53.556Z",
               "EditorCaption": ""

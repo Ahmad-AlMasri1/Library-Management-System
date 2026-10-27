@@ -10,7 +10,7 @@ namespace LibraryManagementSystem.Models
         public int IssueNumber { get; set; }
         #endregion
         #region Constructors
-        public Magazine(string title, ItemStatus Status, ItemType Type, int issueNumber) : base(title, Status, Type)
+        public Magazine(string title, ItemStatus Status, ItemType Type, int issueNumber) : base(title, Status, Type, Period: 7, FeePerDay: 25)
         {
             IssueNumber = issueNumber;
         }
@@ -24,13 +24,15 @@ namespace LibraryManagementSystem.Models
             Console.WriteLine($"Status: {Status}");
             Console.WriteLine($"Type: {Type}");
         }
-        public override void LoanPeriod()
+        public override string LoanPeriod(int Period)
         {
-            Console.WriteLine("Loan period for a magazine is 7 days.");
+            return $"Loan period for a book is {Period} days.";
         }
-        public override void FineCalculation()
+
+        public override string CalculateFee(int NumberOfDays)
         {
-            Console.WriteLine("Fine for a magazine is $0.25 per day.");
+            int totalFee = NumberOfDays * FeePerDay;
+            return $"Total fee for a book is ${totalFee}.";
         }
         #endregion
     }

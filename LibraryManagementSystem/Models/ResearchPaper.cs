@@ -1,7 +1,8 @@
-﻿using System;
+﻿using LibraryManagementSystem.Enum;
+using System;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.Text;
-using LibraryManagementSystem.Enum;
 namespace LibraryManagementSystem.Models
 {
     internal class ResearchPaper : LibraryItem
@@ -13,7 +14,7 @@ namespace LibraryManagementSystem.Models
         #endregion
         #region Constructors
 
-        public ResearchPaper(string researcherName, string researchField) : base(title: "", status: ItemStatus.Available, type: ItemType.ResearchPaper)
+        public ResearchPaper(string title, ItemStatus status, ItemType type, string researcherName, string researchField) : base(title, status, type, Period: 30,FeePerDay: 10)
         {
             ResearcherName = researcherName;
             ResearchField = researchField;
@@ -28,14 +29,15 @@ namespace LibraryManagementSystem.Models
             Console.WriteLine($"Status: {Status}");
             Console.WriteLine($"Type: {Type}");
         }
-        public override void LoanPeriod()
+        public override string LoanPeriod(int Period)
         {
-            Console.WriteLine("Loan period for a research paper is 30 days.");
+            return $"Loan period for a book is {Period} days.";
         }
 
-        public override void FineCalculation()
+        public override string CalculateFee(int NumberOfDays)
         {
-            Console.WriteLine("Fine for a research paper is $1.00 per day.");
+            int totalFee = NumberOfDays * FeePerDay;
+            return $"Total fee for a book is ${totalFee}.";
         }
         #endregion
     }

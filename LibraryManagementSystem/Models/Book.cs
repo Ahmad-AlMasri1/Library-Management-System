@@ -16,7 +16,7 @@ namespace LibraryManagementSystem.Models
         #endregion
         #region Constructors
 
-        public Book(string title, ItemStatus status, ItemType type, string author, int pageCount) : base(title, status, type)
+        public Book(string title, ItemStatus status, ItemType type, string author, int pageCount) : base(title, status, type, Period: 14, FeePerDay: 50)
         {
             Author = author;
             PageCount = pageCount;
@@ -34,14 +34,15 @@ namespace LibraryManagementSystem.Models
             Console.WriteLine($"Type: {Type}");
         }
 
-        public override void LoanPeriod()
+        public override string LoanPeriod(int Period)
         {
-            Console.WriteLine("Loan period for a book is 14 days.");
+            return $"Loan period for a book is {Period} days.";
         }
 
-        public override void FineCalculation()
+        public override string CalculateFee(int NumberOfDays)
         {
-            Console.WriteLine("Fine for a book is $0.50 per day.");
+            int totalFee = NumberOfDays * FeePerDay;
+            return $"Total fee for a book is ${totalFee}.";
         }
 
         #endregion
