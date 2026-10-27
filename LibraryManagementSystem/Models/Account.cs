@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LibraryManagementSystem
+namespace LibraryManagementSystem.Models
 {
     internal class Account
     {
