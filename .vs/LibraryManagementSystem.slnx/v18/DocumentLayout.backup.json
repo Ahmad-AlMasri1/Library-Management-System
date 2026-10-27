@@ -9,6 +9,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +26,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Member.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Member.cs",
+              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Member.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T18:11:45.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Account.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Account.cs",
+              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Account.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Account.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-26T17:56:15.727Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -32,7 +66,7 @@
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Library.cs",
               "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Library.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Library.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwB8AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAgwDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T16:37:23.062Z",
               "EditorCaption": ""
@@ -47,7 +81,8 @@
               "RelativeToolTip": "LibraryManagementSystem\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T16:31:53.556Z"
+              "WhenOpened": "2026-10-26T16:31:53.556Z",
+              "EditorCaption": ""
             }
           ]
         }
