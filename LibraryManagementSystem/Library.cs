@@ -156,10 +156,10 @@ namespace LibraryManagementSystem
                     LibrarianMenu LM = new LibrarianMenu(loggedInAccount , items, accounts);
                     LM.Run();
                 }
-                else if (loggedInAccount.Role == AccountRoleEnum.Member)
+                else if (loggedInAccount is Member member)
                 {
-                    Console.WriteLine("Welcome, Member!");
-                    // Implement member functionalities here
+                    MemberMenu MM = new MemberMenu(member,items);
+                    MM.Run();
                 }
             }
             else
