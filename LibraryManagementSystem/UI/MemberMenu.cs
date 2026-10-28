@@ -30,9 +30,8 @@ namespace LibraryManagementSystem.UI
                 Console.WriteLine("4. Loan Item");
                 Console.WriteLine("5. Return Item");
                 Console.WriteLine("6. Pay the fine");
-                Console.WriteLine("7. Search for Member");
-                Console.WriteLine("8. Update Member");
-                Console.WriteLine("9. Logout");
+                Console.WriteLine("7. Show The Loan Records");
+                Console.WriteLine("8. Logout");
                 choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
@@ -55,13 +54,9 @@ namespace LibraryManagementSystem.UI
                         PayTheFine();
                         break;
                     case 7:
-                        
+                        ShowRecords();
                         break;
                     case 8:
-                      
-
-                        break;
-                    case 9:
                         Console.WriteLine("Logging out. Goodbye!");
 
                         break;
@@ -69,7 +64,16 @@ namespace LibraryManagementSystem.UI
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
                 }
-            } while (choice != 9);
+            } while (choice != 7);
+        }
+
+        private void ShowRecords()
+        {
+            foreach(var record in member.LoanedRecords)
+            {
+                Console.WriteLine("===========================");
+                record.DisplayRecordInfo();
+            }
         }
 
         private void PayTheFine()
@@ -138,7 +142,21 @@ namespace LibraryManagementSystem.UI
                     LibraryItem LI = member.LoanedItems.Find(i => i.Id == choice);
                     if (days > LI.Period)
                         member.FeesOwed += LI.FeePerDay * (days - LI.Period);
-                    member.CurrentLoanItems -= 1;    
+                        member.CurrentLoanItems -= 1;
+                    for(int i=0; i< member.LoanedItems.Count; i++)
+                    {
+                        if (member.LoanedItems[i].Id == LI.Id)
+                        member.LoanedItems.RemoveAt(i);
+                    }
+                    for (int i = 0; i < member.LoanedRecords.Count; i++)
+                    {
+                        if (member.LoanedRecords[i].Id == LI.Id)
+                        {
+                            member.LoanedRecords[i].cnt += 1;
+                            member.LoanedRecords[i].Status = LoanedRecordEnum.previously;
+                        }
+                           
+                    }
                     return;
                 }
                 else
@@ -170,6 +188,8 @@ namespace LibraryManagementSystem.UI
                             {
                                 member.LoanedItems.Add(foundItem);
                                 member.CurrentLoanItems += 1;
+                                foundItem.Status = ItemStatusEnum.Reserved;
+                                member.LoanedRecords.Add(new LoanedRecord(foundItem.Id , foundItem.Title));
                             }
                             else
                             {
@@ -191,6 +211,8 @@ namespace LibraryManagementSystem.UI
                             {
                                 member.LoanedItems.Add(foundItem);
                                 member.CurrentLoanItems += 1;
+                                foundItem.Status = ItemStatusEnum.Reserved;
+                                member.LoanedRecords.Add(new LoanedRecord(foundItem.Id, foundItem.Title));
                             }
                             else
                             {

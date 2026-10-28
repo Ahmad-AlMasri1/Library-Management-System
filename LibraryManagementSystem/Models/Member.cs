@@ -15,6 +15,7 @@ namespace LibraryManagementSystem.Models
 
         public List<LibraryItem> LoanedItems { get; set; } = new List<LibraryItem>();
 
+        public List<LoanedRecord> LoanedRecords { get; set; } = new List<LoanedRecord>();
         public int FeesOwed { get; set; } = 0;
 
         #endregion
