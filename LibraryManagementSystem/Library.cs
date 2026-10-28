@@ -19,7 +19,7 @@ namespace LibraryManagementSystem
             items.Add(new Magazine("National Geographic", ItemStatusEnum.Available, ItemTypeEnum.Magazine, 2));
 
         }
-
+        
         public void Run()
         {
             Console.WriteLine("Welcome to the Library Management System!");
@@ -153,7 +153,7 @@ namespace LibraryManagementSystem
                 if(loggedInAccount.Role == AccountRoleEnum.Librarian)
                 {
                    
-                    LibrarianMenu LM = new LibrarianMenu(loggedInAccount , items);
+                    LibrarianMenu LM = new LibrarianMenu(loggedInAccount , items, accounts);
                     LM.Run();
                 }
                 else if (loggedInAccount.Role == AccountRoleEnum.Member)

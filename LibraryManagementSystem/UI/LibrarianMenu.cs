@@ -13,10 +13,15 @@ namespace LibraryManagementSystem.UI
 
         public List<LibraryItem> items = new List<LibraryItem>();
 
-        public LibrarianMenu(Account acc , List<LibraryItem> items)
+        public List<Account> accounts = new List<Account>();
+
+        public LibrarianMenu(Account acc , List<LibraryItem> items , List<Account> accounts)
+
+
         {
             this.acc = acc;
             this.items = items;
+            this.accounts = accounts;
         }
         public void Run()
         {   Console.WriteLine($"Welcome, {acc.Username}!");
@@ -28,7 +33,11 @@ namespace LibraryManagementSystem.UI
                 Console.WriteLine("2. Update Item");
                 Console.WriteLine("3. Browse Library");
                 Console.WriteLine("4. Search for Items");
-                Console.WriteLine("5. Logout");
+                Console.WriteLine("5. View Members");
+                Console.WriteLine("6. Add New Member");
+                Console.WriteLine("7. Search for Member");
+                Console.WriteLine("8. Update Member");
+                Console.WriteLine("9. Logout");
                 choice = int.Parse(Console.ReadLine());
                 switch(choice)
                 {
@@ -49,14 +58,162 @@ namespace LibraryManagementSystem.UI
                         SearchItem();
                         break;
                     case 5:
+                        Console.WriteLine("View Members :");
+                        ViewMembers();
+                        break;
+                    case 6:
+                        Console.WriteLine("Add New Member selected.");
+                        Register();
+                        break;
+                    case 7:
+                        Console.WriteLine("Search for Member selected.");
+                        SearchMember();
+                        break;
+                    case 8:
+                        Console.WriteLine("Upadte Member selected.");
+                        UpdateMember();
+
+                        break;
+                    case 9:
                         Console.WriteLine("Logging out. Goodbye!");
+                        
                         break;
                     default:
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
                 }
-            } while (choice < 1 || choice > 5);
+            } while (choice != 9);
         }
+
+        private void UpdateMember()
+        {
+            Console.WriteLine("Enter Member ID :");
+            int MemberNumber;
+            do
+            {
+                MemberNumber = int.Parse(Console.ReadLine());
+                if (MemberNumber < 0)
+                {
+                    Console.WriteLine("Invalid Member Number, Try Again:");
+                }
+
+            } while (MemberNumber < 0);
+            bool flag = false;
+            foreach (var account in accounts)
+            {
+                if (account.AccountId == MemberNumber && account is Member member)
+                {
+                    flag = true;
+                    Console.WriteLine("Choose What Do You Want to change : ");
+                    Console.WriteLine("1.MaximumLoanItems");
+                    Console.WriteLine("2.The Member Status");
+                    int choice;
+                    do
+                    {
+                        choice = int.Parse(Console.ReadLine());
+                        switch (choice)
+                        {
+                            case 1:
+                                Console.WriteLine("Enter The New Maximum Loan Items:");
+                                int loan;
+                                do
+                                {
+                                    loan = int.Parse(Console.ReadLine());
+                                    if (loan < 1) Console.WriteLine("Invaled Number Please Try Again:");
+                                } while (loan < 1);
+                                member.MaximumLoanItems = loan;
+                                break;
+                            case 2:
+                                Console.WriteLine("Enter The New Status:");
+                                Console.WriteLine("1.Active.");
+                                Console.WriteLine("2.InActive.");
+                                int status;
+                                do
+                                {
+                                    status = int.Parse(Console.ReadLine());
+                                    if (status == 1)
+                                    {
+                                        member.Status = MemberStatusEnum.Active;
+                                    }else if(status == 2)
+                                    {
+                                        member.Status = MemberStatusEnum.Active;
+                                    }else
+                                    {
+                                        Console.WriteLine("Invalid Number, Try Again:");
+                                    }
+                                } while (status < 1 || status > 2);
+                                break;
+                                
+                        }
+
+                    } while (choice <1 || choice >2);
+                }
+            }
+
+            if (!flag)
+            {
+                Console.WriteLine("No Member Found");
+            }
+        }
+
+        private void SearchMember()
+        {
+            int MemberNumber;
+            Console.WriteLine("Enter the Member Number to search for:");
+            do
+            {
+                MemberNumber = int.Parse(Console.ReadLine());
+                if(MemberNumber < 0)
+                {
+                    Console.WriteLine("Invalid Member Number, Try Again:");
+                }
+
+            } while (MemberNumber < 0);
+            bool flag = false;
+            foreach(var account in accounts)
+            {
+                if(account.AccountId == MemberNumber && account.Role == AccountRoleEnum.Member)
+                {
+                    flag = true;
+                    account.DisplayAccountInfo();
+                }
+            }
+
+            if (!flag)
+            {
+                Console.WriteLine("No Member Found");
+            }
+        }
+
+        private void Register()
+        {
+            string name, password, phoneNumber, email;
+            Console.WriteLine("Enter your name:");
+            name = Console.ReadLine();
+            Console.WriteLine("Enter your password:");
+            password = Console.ReadLine();
+            Console.WriteLine("Enter your phone number:");
+            phoneNumber = Console.ReadLine();
+            Console.WriteLine("Enter your email:");
+            email = Console.ReadLine();
+
+            accounts.Add(new Member(name, password, phoneNumber, email, 5));
+
+            Console.WriteLine("Registration successful! You can now log in with your email and password.");
+        }
+
+        private void ViewMembers()
+        {
+            foreach (var account in accounts)
+            {
+                if (account is Member member)
+                {
+                    member.DisplayAccountInfo();
+                }
+            }
+            return;
+        }
+
         private void SearchItem()
         {
             int choice;

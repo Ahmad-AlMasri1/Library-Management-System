@@ -8,6 +8,8 @@ namespace LibraryManagementSystem.Models
     {
         #region Attributes
             public static int Id { get; set; } = 0;
+                
+            public  int AccountId { get; set; } 
             public string Username { get; set; }
             public string Password { get; set; }
             
@@ -23,7 +25,7 @@ namespace LibraryManagementSystem.Models
 
         public Account(string username, string password, string phoneNumber, string email , AccountRoleEnum role)
         {
-            Id = ++Id;
+            AccountId = ++Id;
             Username = username;
             Password = password;
             PhoneNumber = phoneNumber;

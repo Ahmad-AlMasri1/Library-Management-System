@@ -7,8 +7,6 @@ namespace LibraryManagementSystem.Models
     internal class Member : Account
     {
         #region Attributes
-        public static int MembershipId { get; set; } = 0;
-
         public int MaximumLoanItems { get; set; }
 
         public int CurrentLoanItems { get; set; }
@@ -25,7 +23,6 @@ namespace LibraryManagementSystem.Models
 
         public Member(string username, string password, string phoneNumber, string email, int maximumLoanItems) : base(username, password, phoneNumber, email, AccountRoleEnum.Member)
         {
-            MembershipId = ++MembershipId;
             MaximumLoanItems = maximumLoanItems;
             CurrentLoanItems = 0;
         }
@@ -34,7 +31,7 @@ namespace LibraryManagementSystem.Models
 
         public override void DisplayAccountInfo()
         {
-            Console.WriteLine($"Member ID: {MembershipId}");
+            Console.WriteLine($"Member ID: {AccountId}");
             Console.WriteLine($"Username: {Username}");
             Console.WriteLine($"Phone Number: {PhoneNumber}");
             Console.WriteLine($"Email: {Email}");

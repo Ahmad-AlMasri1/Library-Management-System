@@ -7,28 +7,36 @@
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\ui\\librarianmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\libraryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\libraryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\researchpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\researchpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\magazine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\magazine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\libraryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\libraryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\ahmad\\documents\\my courses\\fullstack 16 course\\back-end\\librarymanagementsystem\\librarymanagementsystem\\models\\researchpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B6D0B5A-1C24-3116-5E95-BA05C786EAA3}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\models\\researchpaper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,12 +45,29 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 166,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 199,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Account.cs",
+              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Account.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T02:25:41.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ResearchPaper.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\ResearchPaper.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\ResearchPaper.cs",
@@ -50,29 +75,24 @@
               "RelativeToolTip": "LibraryManagementSystem\\Models\\ResearchPaper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-27T21:15:04.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2026-10-27T21:15:04.744Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Library.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Library.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Library.cs",
               "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Library.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Library.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAwJoAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAuwJwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-26T16:37:23.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Magazine.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Magazine.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Magazine.cs",
@@ -85,37 +105,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Book.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Book.cs",
               "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Book.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T21:14:44.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "LibraryItem.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\LibraryItem.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\LibraryItem.cs",
               "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\LibraryItem.cs",
               "RelativeToolTip": "LibraryManagementSystem\\Models\\LibraryItem.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T21:03:40.72Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "LibraryManagementSystem\\Program.cs",
@@ -129,7 +145,7 @@
           ]
         },
         {
-          "DockedWidth": 234,
+          "DockedWidth": 201,
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -140,17 +156,25 @@
               "RelativeDocumentMoniker": "LibraryManagementSystem\\UI\\LibrarianMenu.cs",
               "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\UI\\LibrarianMenu.cs*",
               "RelativeToolTip": "LibraryManagementSystem\\UI\\LibrarianMenu.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAmwDsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwE0AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T21:22:55.332Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Models\\Member.cs",
+              "ToolTip": "C:\\Users\\ahmad\\Documents\\My Courses\\Fullstack 16 Course\\Back-end\\LibraryManagementSystem\\LibraryManagementSystem\\Models\\Member.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Models\\Member.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T04:00:47.365Z",
+              "EditorCaption": ""
             }
           ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
         }
       ]
     }
