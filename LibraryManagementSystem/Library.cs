@@ -151,8 +151,7 @@ namespace LibraryManagementSystem
                 Console.WriteLine("Login successful!");
                 Account loggedInAccount = accounts.Find(a => a.Email == email && a.Password == password);
                 if(loggedInAccount.Role == AccountRoleEnum.Librarian)
-                {
-                   
+                {  
                     LibrarianMenu LM = new LibrarianMenu(loggedInAccount , items, accounts);
                     LM.Run();
                 }
@@ -160,6 +159,10 @@ namespace LibraryManagementSystem
                 {
                     MemberMenu MM = new MemberMenu(member,items);
                     MM.Run();
+                }else if (loggedInAccount is Admin admin)
+                {
+                    AdminMenu AM = new AdminMenu(loggedInAccount);
+                    AM.Run();
                 }
             }
             else

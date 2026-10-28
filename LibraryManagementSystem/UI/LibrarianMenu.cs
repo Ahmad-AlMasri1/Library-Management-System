@@ -90,7 +90,7 @@ namespace LibraryManagementSystem.UI
             } while (choice != 9);
         }
 
-        private void MostLoanded()
+        protected void MostLoanded()
         {
             var most = items.OrderByDescending(i => i.cnt).ToList();
 
@@ -102,7 +102,7 @@ namespace LibraryManagementSystem.UI
             }
         }
 
-        private void UpdateMember()
+        protected void UpdateMember()
         {
             Console.WriteLine("Enter Member ID :");
             int MemberNumber;
@@ -173,7 +173,7 @@ namespace LibraryManagementSystem.UI
             }
         }
 
-        private void SearchMember()
+        protected void SearchMember()
         {
             int MemberNumber;
             Console.WriteLine("Enter the Member Number to search for:");
@@ -202,7 +202,7 @@ namespace LibraryManagementSystem.UI
             }
         }
 
-        private void Register()
+        protected void Register()
         {
             string name, password, phoneNumber, email;
             Console.WriteLine("Enter your name:");
@@ -219,7 +219,7 @@ namespace LibraryManagementSystem.UI
             Console.WriteLine("Registration successful! You can now log in with your email and password.");
         }
 
-        private void ViewMembers()
+        protected void ViewMembers()
         {
             foreach (var account in accounts)
             {
@@ -231,7 +231,7 @@ namespace LibraryManagementSystem.UI
             return;
         }
 
-        private void SearchItem()
+        protected void SearchItem()
         {
             int choice;
             do
@@ -280,7 +280,7 @@ namespace LibraryManagementSystem.UI
             } while (choice < 1 || choice > 3);
         }
 
-        private void Browse()
+        protected void Browse()
         {
             Console.WriteLine("Library Items:");
             foreach (var item in items)
@@ -288,7 +288,7 @@ namespace LibraryManagementSystem.UI
                     Console.WriteLine($"Title: {item.Title}, Status: {item.Status}, Type: {item.Type}");
             }
         }
-        private void ItemUpdate()
+        protected void ItemUpdate()
         {
             Console.WriteLine("Enter the ID of the item to update:");
             int id = int.Parse(Console.ReadLine());
@@ -430,7 +430,7 @@ namespace LibraryManagementSystem.UI
             }
         }
 
-        private void AddItem()
+        protected void AddItem()
         {
             Console.WriteLine("Enter the title of the item:");
             string title = Console.ReadLine();
