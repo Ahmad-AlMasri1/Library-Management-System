@@ -59,7 +59,144 @@ namespace LibraryManagementSystem.UI
 
         private void Update()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Enter the ID of the item to update:");
+            int id = int.Parse(Console.ReadLine());
+            if (items.Exists(i => i.Id == id))
+            {
+                LibraryItem foundItem = items.Find(i => i.Id == id);
+                int choice;
+                do
+                {
+                    Console.WriteLine("What would you like to update:");
+                    Console.WriteLine("1. Title");
+                    Console.WriteLine("2. Status");
+                    if (foundItem is Book)
+                    {
+                        Console.WriteLine("3. Author");
+                        Console.WriteLine("4. Page Count");
+                        Console.WriteLine("5. Back to Main Menu");
+                    }
+                    else if (foundItem is Magazine)
+                    {
+                        Console.WriteLine("3. Issue Number");
+                        Console.WriteLine("4. Back to Main Menu");
+                    }
+                    else if (foundItem is ResearchPaper)
+                    {
+                        Console.WriteLine("3. Researcher Name");
+                        Console.WriteLine("4. Research Field");
+                        Console.WriteLine("5. Back to Main Menu");
+                    }
+                    choice = int.Parse(Console.ReadLine());
+                    switch (choice)
+                    {
+                        case 1:
+                            Console.WriteLine("Enter the new title:");
+                            foundItem.Title = Console.ReadLine();
+                            Console.WriteLine("Title updated successfully.");
+                            break;
+                        case 2:
+                            Console.WriteLine("Choose the new status:");
+                            Console.WriteLine("1. Available");
+                            Console.WriteLine("2. Checked Out");
+                            Console.WriteLine("3. Reserved");
+                            int statusChoice = int.Parse(Console.ReadLine());
+                            do
+                            {
+                                switch (statusChoice)
+                                {
+                                    case 1:
+                                        foundItem.Status = ItemStatusEnum.Available;
+                                        break;
+                                    case 2:
+                                        foundItem.Status = ItemStatusEnum.CheckedOut;
+                                        break;
+                                    case 3:
+                                        foundItem.Status = ItemStatusEnum.Reserved;
+                                        break;
+                                    default:
+                                        Console.WriteLine("Invalid status choice. Try again.");
+                                        break;
+                                }
+
+                            } while (statusChoice < 1 || statusChoice > 3);
+                            break;
+                        case 3:
+                            if (foundItem is Book book)
+                            {
+                                Console.WriteLine("Enter the new author:");
+                                book.Author = Console.ReadLine();
+                                Console.WriteLine("Author updated successfully.");
+                            }
+                            else if (foundItem is Magazine magazine)
+                            {
+                                Console.WriteLine("Enter the new issue number:");
+                                int newIssueNumber;
+                                do
+                                {
+                                    newIssueNumber = int.Parse(Console.ReadLine());
+                                    if (newIssueNumber < 1)
+                                    {
+                                        Console.WriteLine("Issue number must be a positive integer. Please try again.");
+                                    }
+                                } while (newIssueNumber < 1);
+                                magazine.IssueNumber = newIssueNumber;
+                                Console.WriteLine("Issue number updated successfully.");
+                            }
+                            else if (foundItem is ResearchPaper researchPaper)
+                            {
+                                Console.WriteLine("Enter the new researcher name:");
+                                researchPaper.ResearcherName = Console.ReadLine();
+                                Console.WriteLine("Researcher name updated successfully.");
+                            }
+                            break;
+                        case 4:
+                            if (foundItem is Book book2)
+                            {
+                                Console.WriteLine("Enter the new page count:");
+                                int newPageCount;
+                                do
+                                {
+                                    newPageCount = int.Parse(Console.ReadLine());
+                                    if (newPageCount < 1)
+                                    {
+                                        Console.WriteLine("Page count must be a positive integer. Please try again.");
+                                    }
+                                } while (newPageCount < 1);
+                                book2.PageCount = newPageCount;
+                                Console.WriteLine("Page count updated successfully.");
+                            }
+                            else if (foundItem is ResearchPaper researchPaper2)
+                            {
+                                Console.WriteLine("Enter the new research field:");
+                                researchPaper2.ResearchField = Console.ReadLine();
+                                Console.WriteLine("Research field updated successfully.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Returning  to Main Menu");
+                            }
+                            break;
+
+                        case 5:
+                            if (foundItem is Book || foundItem is ResearchPaper)
+                            {
+                                Console.WriteLine("Returning to Main Menu.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid choice. Please try again.");
+                            }
+                            break;
+
+                    }
+
+                } while (((foundItem.Type == ItemTypeEnum.Book || foundItem.Type == ItemTypeEnum.ResearchPaper) && (choice > 5 || choice < 1)) || ((foundItem.Type == ItemTypeEnum.Magazine) && (choice > 4 || choice < 1)));
+                }
+                 else
+            {
+                Console.WriteLine("Item not found.");
+            }
         }
 
         private void AddItem()
