@@ -1,9 +1,10 @@
-﻿using LibraryManagementSystem.Models;
+﻿using LibraryManagementSystem;
+using LibraryManagementSystem.Enum;
+using LibraryManagementSystem.Models;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using LibraryManagementSystem.Enum;
 using System.Data;
+using System.Text;
 namespace LibraryManagementSystem.UI
 {
     internal class LibrarianMenu
@@ -25,8 +26,8 @@ namespace LibraryManagementSystem.UI
                 Console.WriteLine("Librarian Menu:");
                 Console.WriteLine("1. Add Item");
                 Console.WriteLine("2. Update Item");
-                Console.WriteLine("3. Update Item");
-                Console.WriteLine("4. View All Items");
+                Console.WriteLine("3. Browse Library");
+                Console.WriteLine("4. Search for Items");
                 Console.WriteLine("5. Logout");
                 choice = int.Parse(Console.ReadLine());
                 switch(choice)
@@ -37,15 +38,15 @@ namespace LibraryManagementSystem.UI
                         break;
                     case 2:
                         Console.WriteLine("Update Item selected.");
-                        Update();
+                        ItemUpdate();
                         break;
                     case 3:
-                        Console.WriteLine("Update Item selected.");
-                        // Implement update item functionality here
+                        Console.WriteLine("Browse Library selected.");
+                        Browse();
                         break;
                     case 4:
-                        Console.WriteLine("View All Items selected.");
-                        // Implement view all items functionality here
+                        Console.WriteLine("Search for Items selected.");
+                        SearchItem();
                         break;
                     case 5:
                         Console.WriteLine("Logging out. Goodbye!");
@@ -56,8 +57,64 @@ namespace LibraryManagementSystem.UI
                 }
             } while (choice < 1 || choice > 5);
         }
+        private void SearchItem()
+        {
+            int choice;
+            do
+            {
+                Console.WriteLine("Search for Items by:");
+                Console.WriteLine("1. Title");
+                Console.WriteLine("2. Item ID");
+                Console.WriteLine("3. Back to Main Menu");
+                choice = int.Parse(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("Enter the title to search for:");
+                        string title = Console.ReadLine();
+                        if (items.Exists(i => i.Title == title && i.Status != ItemStatusEnum.CheckedOut))
+                        {
+                            LibraryItem foundItem = items.Find(i => i.Title == title);
+                            foundItem.DisplayItemInfo();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Item not found.");
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("Enter the Item ID to search for:");
+                        int id = int.Parse(Console.ReadLine());
+                        if (items.Exists(i => i.Id == id && i.Status != ItemStatusEnum.CheckedOut))
+                        {
+                            LibraryItem foundItem = items.Find(i => i.Id == id);
+                            foundItem.DisplayItemInfo();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Item not found.");
+                        }
+                        break;
+                    case 3:
+                        Console.WriteLine("Returning to Main Menu.");
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
 
-        private void Update()
+                }
+            } while (choice < 1 || choice > 3);
+        }
+
+        private void Browse()
+        {
+            Console.WriteLine("Library Items:");
+            foreach (var item in items)
+            {
+                    Console.WriteLine($"Title: {item.Title}, Status: {item.Status}, Type: {item.Type}");
+            }
+        }
+        private void ItemUpdate()
         {
             Console.WriteLine("Enter the ID of the item to update:");
             int id = int.Parse(Console.ReadLine());
