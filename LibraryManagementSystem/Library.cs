@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Enum;
+using LibraryManagementSystem.UI;
 namespace LibraryManagementSystem
 {
     internal class Library
@@ -151,8 +152,9 @@ namespace LibraryManagementSystem
                 Account loggedInAccount = accounts.Find(a => a.Email == email && a.Password == password);
                 if(loggedInAccount.Role == AccountRoleEnum.Librarian)
                 {
-                    Console.WriteLine("Welcome, Librarian!");
-                    // Implement librarian functionalities here
+                   
+                    LibrarianMenu LM = new LibrarianMenu(loggedInAccount , items);
+                    LM.Run();
                 }
                 else if (loggedInAccount.Role == AccountRoleEnum.Member)
                 {
