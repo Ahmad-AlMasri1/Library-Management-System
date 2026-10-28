@@ -37,7 +37,8 @@ namespace LibraryManagementSystem.UI
                 Console.WriteLine("6. Add New Member");
                 Console.WriteLine("7. Search for Member");
                 Console.WriteLine("8. Update Member");
-                Console.WriteLine("9. Logout");
+                Console.WriteLine("9. Most Loaned Items");
+                Console.WriteLine("10. Logout");
                 choice = int.Parse(Console.ReadLine());
                 switch(choice)
                 {
@@ -72,9 +73,13 @@ namespace LibraryManagementSystem.UI
                     case 8:
                         Console.WriteLine("Upadte Member selected.");
                         UpdateMember();
-
                         break;
                     case 9:
+                        Console.WriteLine("Most Loaned Items selected.");
+                        MostLoanded();
+    
+                        break;
+                    case 10:
                         Console.WriteLine("Logging out. Goodbye!");
                         
                         break;
@@ -83,6 +88,18 @@ namespace LibraryManagementSystem.UI
                         break;
                 }
             } while (choice != 9);
+        }
+
+        private void MostLoanded()
+        {
+            var most = items.OrderByDescending(i => i.cnt).ToList();
+
+            foreach(var item in most)
+            {
+                Console.WriteLine("====================");
+                item.DisplayItemInfo();
+
+            }
         }
 
         private void UpdateMember()

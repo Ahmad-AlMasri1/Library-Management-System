@@ -15,6 +15,8 @@ namespace LibraryManagementSystem.Models
         public ItemStatusEnum Status { get; set; }
         public ItemTypeEnum Type { get; set; }
 
+        public int cnt { get; set; } = 0;
+
         public int Period { get; set; }
 
         public int FeePerDay { get; set; }

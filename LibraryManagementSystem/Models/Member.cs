@@ -40,6 +40,16 @@ namespace LibraryManagementSystem.Models
             Console.WriteLine($"Maximum Loan Items: {MaximumLoanItems}");
             Console.WriteLine($"Current Loan Items: {CurrentLoanItems}");
             Console.WriteLine($"Fees Owed: ${FeesOwed}");
+            Console.WriteLine("Loaned Items:");
+            foreach (var loan in LoanedItems)
+            {
+                loan.DisplayItemInfo();
+            }
+            Console.WriteLine("Loaned Records:");
+            foreach (var record in LoanedRecords)
+            {
+                record.DisplayRecordInfo();
+            }
         }
 
         

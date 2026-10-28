@@ -190,6 +190,7 @@ namespace LibraryManagementSystem.UI
                                 member.CurrentLoanItems += 1;
                                 foundItem.Status = ItemStatusEnum.Reserved;
                                 member.LoanedRecords.Add(new LoanedRecord(foundItem.Id , foundItem.Title));
+                                foundItem.cnt++;
                             }
                             else
                             {
@@ -213,6 +214,7 @@ namespace LibraryManagementSystem.UI
                                 member.CurrentLoanItems += 1;
                                 foundItem.Status = ItemStatusEnum.Reserved;
                                 member.LoanedRecords.Add(new LoanedRecord(foundItem.Id, foundItem.Title));
+                                foundItem.cnt++;
                             }
                             else
                             {
